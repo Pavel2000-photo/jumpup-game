@@ -1,14 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <!-- Иконка (Vite сам подставит правильный путь при билде) -->
     <link rel="icon" type="image/svg+xml" href="/jumpup-game/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/jumpup-game/assets/index-DxRWhF46.js"></script>
-    <link rel="stylesheet" crossorigin href="/jumpup-game/assets/index-Dtn62Xmo.css">
+    <!-- ВАЖНО для телефона: корректный вьюпорт + без зума жестами -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <!-- Цвет адресной строки на мобилках (необязательно) -->
+    <meta name="theme-color" content="#0b1220" />
+    <title>JumpUp — Doodle Jump mini</title>
+    <script type="module" crossorigin src="/jumpup-game/assets/index-CjYw6YAt.js"></script>
+    <link rel="stylesheet" crossorigin href="/jumpup-game/assets/index-CXY28mkB.css">
   </head>
   <body>
     <div id="root"></div>
+    <!-- Vite перепишет путь при сборке, оставляем так -->
   </body>
 </html>
